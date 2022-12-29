@@ -1,0 +1,209 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input,button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+    border-bottom: 0.2px solid black;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0 20px 0;
+}
+
+.the{
+    font-size: 15px;
+    
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.navDiv li{
+    
+    list-style: none;
+    color: green;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navDiv li:hover{
+color:red;
+}
+
+.navDiv li.active{
+    background-color: aqua;
+    }
+    
+.linkD{
+    text-decoration: none;
+    color:red;
+}
+
+/* Styling of Banner Component */
+
+.bannerContainer{
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    display: flex;
+    /* background-color: red; */
+    
+}
+
+.leftBanner{
+    height: 95%;
+    width: 65%;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/17/19/14/mansion-2958234_960_720.jpg');
+    
+    
+    
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+.bannerOneTitle{
+
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    color: white;
+}
+.secondline{
+    position: absolute;
+    left: 10%;
+    top: 78%;
+    color: rgb(219, 91, 91);
+}
+
+.rightBanner{
+   
+    height: 95%;
+    width: 30%;
+    margin: 10px;
+    margin-left: 10px;
+}
+#firstSBanner{
+    margin-bottom: 20px;
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/22/17/45/leaf-1001679__340.jpg');
+    background-size: cover;
+    /* background-position: center; */
+}
+#secondSBanner{
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/30/08/18/moscow-1556564__340.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+.rightSubBanner{
+
+    border-radius: 10px;
+    width: 100%;
+    height: 48.5%;
+    
+}
+.firstline{
+    position: absolute;
+    left: 68%;
+    top: 39%;
+    color: white;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.firstlin{
+    position: absolute;
+    left: 68%;
+    top: 83%;
+    color: white;
+    font-size: 23px;
+    font-weight: bolder;
+
+}
+.secondlin{
+    position: absolute;
+    left: 68%;
+    top: 49%;
+    color: rgb(68, 59, 59);
+}
+.secondli{
+    position: absolute;
+    left: 68%;
+    top: 93%;
+    color: rgb(68, 59, 59);
+}
+
+/* LatestArtciles */
+
+.headLine{
+    margin-left: 1%;
+    border-bottom: 2px solid red;
+    width: 230px;
+    padding: 10px ;
+    margin-bottom: 2rem;
+    
+}
+
+.blogItem-link{
+    
+    color:black  ;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Styling for Mobile View */
+
+
+@media only screen and (max-width: 600px){
+	
+    .navDiv{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .linkD{
+        margin-bottom: 10px;
+
+    }
+    .linkD.active{
+       background-color: greenyellow;
+    }
+
+    .bannerContainer{
+        flex-direction: column;
+    }
+
+    .leftBanner{
+        width: 95%;
+    }
+    .rightBanner{
+        display: none;
+    }
+
+}
